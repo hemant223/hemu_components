@@ -27,5 +27,6 @@ sonar {
     property "sonar.projectKey", "hemu_components"
     property "sonar.organization", "hemu_components"
     property "sonar.host.url", "http://localhost:9000"
+    property "sonar.exclusions", "**/*Generated.java"
   }
 }
