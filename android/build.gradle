@@ -19,3 +19,13 @@ buildscript {
         classpath("com.facebook.react:react-native-gradle-plugin")
     }
 }
+plugins {
+  id "org.sonarqube" version "4.2.1.3168"
+}
+sonar {
+  properties {
+    property "sonar.projectKey", "hemu_components"
+    property "sonar.organization", "hemu_components"
+    property "sonar.host.url", "http://localhost:9000"
+  }
+}
